@@ -1,0 +1,36 @@
+baseURL = 'https://blog.rugmj.dev/'
+languageCode = 'en-gb'
+title = 'blog.rugmj.dev'
+theme = "PaperMod"
+refLinksErrorLevel = 'WARNING'
+refLinksNotFoundURL = ''
+
+mainSections = ["posts"]
+
+[params]
+author = "rugmj"
+ShowPostNavLinks = true
+ShowReadingTime = true
+ShowRssButtonInSectionTermList = true
+ShowBreadCrumbs = true
+
+[params.render_hooks.link]
+errorLevel = 'warning' # ignore (default), warning, or error (fails the build)
+
+[markup]
+[markup.goldmark]
+[markup.goldmark.parser]
+[markup.goldmark.parser.attribute]
+block = true
+title = true
+[markup.highlight]
+style = "catppuccin-mocha"
+
+
+[outputs]
+home = ['html', 'rss']
+page = ['html']
+rss = ['rss']
+section = ['html', 'rss']
+taxonomy = ['html', 'rss']
+term = ['html', 'rss']
