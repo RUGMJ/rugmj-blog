@@ -13,12 +13,20 @@ ShowPostNavLinks = true
 ShowReadingTime = true
 ShowRssButtonInSectionTermList = true
 ShowBreadCrumbs = true
+ShowToc = true
+ShowCodeCopyButtons = true
+
+[params.editPost]
+URL = "https://github.com/RUGMJ/rugmj-blog/tree/main/content"
+appendFilePath = true
 
 [params.render_hooks.link]
 errorLevel = 'warning' # ignore (default), warning, or error (fails the build)
 
 [markup]
 [markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
 [markup.goldmark.parser]
 [markup.goldmark.parser.attribute]
 block = true
@@ -28,7 +36,7 @@ style = "catppuccin-mocha"
 
 
 [outputs]
-home = ['html', 'rss']
+home = ['html', 'rss', 'json']
 page = ['html']
 rss = ['rss']
 section = ['html', 'rss']
