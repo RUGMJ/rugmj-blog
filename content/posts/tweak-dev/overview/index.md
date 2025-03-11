@@ -3,6 +3,11 @@ title = 'Tweak Dev - Overview'
 date = 2025-01-22
 weight = 1
 summary = "The tools and concepts we will be using" 
+
+[cover]
+image = "cover.png"
+hiddenInList = true
+
 +++
 
 <!-- {{< youtube dQw4w9WgXcQ >}} -->
